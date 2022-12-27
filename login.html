@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url("https://glimageurl.golocall.com/golocal-post/image/911855_fusionplus_1505392402.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        form {
+            width: 50%;
+
+            margin-top: 100px;
+            border: 1px solid #f1f1f1;
+            margin-left: 20px;
+
+        }
+        form h4{
+            text-align: center;
+            font-family: tahoma;
+            font-weight: bolder;
+        }
+
+        .a {
+            height: fit-content;
+            position: absolute;
+            left: 90px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #04AA6D;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            background-color: #f44336;
+        }
+
+        .imgcontainer {
+            text-align: center;
+        }
+
+        img.avatar {
+            width: 30%;
+            border-radius: 50%;
+        }
+
+        .container {
+            padding: 16px;
+        }
+
+        #btn {
+            background-color: darkblue;
+            color: white;
+            font-weight: bold;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 16px;
+        }
+
+
+        @media screen and (max-width: 100px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+
+            .cancelbtn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="a">
+        <form action="/home/dell/Desktop/27_12/index.html" method="get">
+        <h4 style="color:rgb(6, 88, 88)">Welcome to City Hospital</h4>
+
+            <div class="imgcontainer">
+                <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <input id="btn" type="submit" value="login"></input>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

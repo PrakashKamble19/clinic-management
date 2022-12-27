@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+        #home {
+            background-color: rgb(155, 212, 235);
+            font-family: 'Tahoma';
+            padding: 10px;
+            
+        }
+
+        * {
+            background-color: rgb(183, 211, 223);
+        }
+
+        #img2 {
+            margin-left: 200px;
+        }
+
+        #img3 {
+            margin-left: 0px;
+        }
+        h2{
+            color:rgb(9, 9, 70)
+        }
+        #id{
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="navbar-example2" class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Quadwave Consulting Pvt Ltd</a>
+                <ul class="navbar-nav nav-pills me-auto mb-2 mb-lg-0 p-2  ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#apointment">Apointment</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-targe="navbar-example2" data-bs-root-margin="0px 0px -40%"
+        data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+        <br><br>
+
+        <h2 id="home" align="center" style="font-weight:bolder" >CITY HELTH-CARE</h2>
+        <img src="https://sahyadrihospital.com/wp-content/uploads/2021/05/speciality-clinic.jpg" alt="" width="1200px" height="500px">
+        <p>
+        </p>
+
+        <h2 id="about" style="background-color:skyblue">About</h2>
+        <p>Whether it's public health organizations, hospitals, teaching institutions, group practices or private
+            practices, doctors are needed everywhere. Their career is very challenging and varied and because the life
+            of the patients is in their hands, they have to be very responsible in their profession. Almost half of the
+            doctors work as specialist doctors or surgeons in hospitals and medical institutions. In the field of the
+            medical profession, <a href="https://www.dmhospital.org/">More</a>
+        </p>
+
+
+
+          <!-- profile section end -->
+
+
+
+        <img id="img2" src=" https://trafft.com/wp-content/uploads/2022/06/Medical-Staff-1.jpg" alt="" height="300"
+            width="800">
+        <br><br>
+
+        <h2 id="apointment" style="background-color:skyblue"></h2>
+
+        <section id="appointment" class="appointment section-bg">
+            <div class="container">
+
+                <div class="section-title"><br>
+                    <h2 style="background-color:skyblue; font-family:princetown; font-weight: bolder;"> Make an Appointment</h2><br>
+                    <p>The whole purpose is to serve mankind and to cure patients' pain and suffering. In this respect,
+                        society is indebted to the medical profession.
+
+                        Doctors have to spend a lot of time in their role, unlike other professions; the profession is
+                        not limited to 9 to 5 days</p><br>
+                </div>
+
+                <!-- apontment start heare -->
+                <form class="row g-3" onsubmit="return funalert()">
+                    <div class="col-md-4">
+                      <label for="validationDefault01" class="form-label">First name</label>
+                      <input type="text" class="form-control" id="validationDefault01" required>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationDefault02" class="form-label">Last name</label>
+                      <input type="text" class="form-control" id="validationDefault02"  required>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="validationDefaultUsername" class="form-label">Email</label>
+                      <div class="input-group">
+                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                        <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="validationDefault03" class="form-label">Regardings</label>
+                      <input type="text" class="form-control" id="validationDefault03" required>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationDefault04" class="form-label">Doctores</label>
+                      <select class="form-select" id="validationDefault04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>Doctore 1</option>
+                        <option>Doctore 2</option>
+                        <option>Doctore 3</option>
+                        <option>Doctore 4</option>
+
+                      </select>
+                    </div>
+                    <div class="col-md-3">
+                      <label for="validationDefault05" class="form-label">Contact No</label>
+                      <input type="text" class="form-control" id="validationDefault05" required>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                          Agree to terms and conditions
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit" >Submit form</button>
+                    </div>
+                  </form>
+                <br><br>
+                <!-- apointment section end here -->
+                <img id="img3" src="https://www.fordhospital.org/img/slider/1.jpg" alt="" height="200" width="1200px">
+
+
+                <div class="card text-center">
+                    <div class="card-header">
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Deenanath Mangeshkar Hospital</h5>
+                        <p class="card-text"><b>A good laugh and a long sleep are the best cures in the doctor's
+                                book</b></p>
+                        <h9>Teerth Technospace Pune <br>Near Mersedise showroon Mum-Pune hightway
+                        </h9>
+                    </div>
+                    <div class="card-footer text-muted">
+
+                    </div>
+                </div>
+                <script>
+                    function funalert() {
+                        alert("Your Apointment is succesfully booked");
+                    }
+                </script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                    crossorigin="anonymous"></script>
+</body>
+
+</html>
